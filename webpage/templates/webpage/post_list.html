@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sunstar - Aktualności</title>
+    {% for post in posts %}
+        <h1><a href="">{{ post.title }}</a> </h1>
+        <p>published:{{ post.published_date }}</p>
+        <p>{{ post.text|linebreaks }}</p>
+    {% endfor %}
+</head>
+<body>
+
+</body>
+</html>
